@@ -1,7 +1,7 @@
 module.exports = {
  entry: "./scripts/app.js",
  output: {
-	filename: "out.js"
+	filename: "./scripts/out.js"
  },
  devServer: {
   inline: true,
@@ -20,6 +20,7 @@ module.exports = {
      test: /\.scss$/,
      loader: 'style-loader!css-loader!sass-loader'
    },
+
    {
      test: /\.html$/,
      loader: "raw-loader"
@@ -27,6 +28,3 @@ module.exports = {
   ]
  }
 }
-
-
-//./node_modules/.bin/webpack

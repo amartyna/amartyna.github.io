@@ -29,7 +29,6 @@ about.click(function() {
   contactInfo.hide();
   aboutInfo.fadeToggle();
 
-
 });
 
 contact.click(function() {
