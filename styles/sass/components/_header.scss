@@ -5,7 +5,7 @@ body {
 .container {
   display: flex;
   flex-direction: row-reverse;
-  max-width: 800px;
+  max-width: 1000px;
   height: 100vh;
   align-items: center;
   margin: auto;
@@ -13,13 +13,20 @@ body {
 
 .main {
   display: flex;
-  font-size: 5rem;
+  width: 500px;
+  height: 500px;
   flex-direction: column;
-}
-.main_welcome {
+
   h1 {
-    margin-bottom: 20%;
+    font-size: 5rem;
+    padding-bottom: 10%;
   }
+}
+
+.info {
+  width: 500px;
+  height: 500px;
+  padding: 10%;
 }
 
 .main_nav-list {
@@ -33,15 +40,4 @@ body {
       cursor: pointer;
     }
   }
-}
-
-.info {
-  padding: 20%;
-  width: 500px;
-  height: 500px;
-  display: flex;
-}
-
-p {
-  margin-bottom: 10%;
 }

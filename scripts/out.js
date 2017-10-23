@@ -97,18 +97,30 @@ projects.click(function () {
   aboutInfo.hide();
   contactInfo.hide();
   projectsInfo.fadeToggle();
+
+  if (clicked) {
+    $('.title').text("Projects");
+  }
 });
 
 about.click(function () {
   projectsInfo.hide();
   contactInfo.hide();
   aboutInfo.fadeToggle();
+
+  if (clicked) {
+    $('.title').text("About");
+  }
 });
 
 contact.click(function () {
   aboutInfo.hide();
   projectsInfo.hide();
   contactInfo.fadeToggle();
+
+  if (clicked) {
+    $('.title').text("Contact");
+  }
 });
 
 /***/ }),
@@ -151,7 +163,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier; }\n\n.container {\n  display: flex;\n  flex-direction: row-reverse;\n  max-width: 800px;\n  height: 100vh;\n  align-items: center;\n  margin: auto; }\n\n.main {\n  display: flex;\n  font-size: 5rem;\n  flex-direction: column; }\n\n.main_welcome h1 {\n  margin-bottom: 20%; }\n\n.main_nav-list {\n  font-size: 1rem;\n  display: inline-flex; }\n  .main_nav-list li {\n    margin-right: 15%; }\n    .main_nav-list li:hover {\n      color: #e542f4;\n      cursor: pointer; }\n\n.info {\n  padding: 20%;\n  width: 500px;\n  height: 500px;\n  display: flex; }\n\np {\n  margin-bottom: 10%; }\n", ""]);
+exports.push([module.i, "html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier; }\n\n.container {\n  display: flex;\n  flex-direction: row-reverse;\n  max-width: 1000px;\n  height: 100vh;\n  align-items: center;\n  margin: auto; }\n\n.main {\n  display: flex;\n  width: 500px;\n  height: 500px;\n  flex-direction: column; }\n  .main h1 {\n    font-size: 5rem;\n    padding-bottom: 10%; }\n\n.info {\n  width: 500px;\n  height: 500px;\n  padding: 10%; }\n\n.main_nav-list {\n  font-size: 1rem;\n  display: inline-flex; }\n  .main_nav-list li {\n    margin-right: 15%; }\n    .main_nav-list li:hover {\n      color: #e542f4;\n      cursor: pointer; }\n", ""]);
 
 // exports
 
@@ -709,7 +721,7 @@ module.exports = function (css) {
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <link rel=\"stylesheet\" href=\"styles/css/main.css\">\n  <title>Aleksandra Martyna</title>\n</head>\n<body>\n  <div class=\"container\">\n    <header>\n      <div class=\"main\">\n        <div class=\"main_welcome\">\n          <h1>{</h1>\n          <h1>Hello</h1>\n          <h1>}</h1>\n        </div>\n        <div class=\"main_nav\">\n          <nav>\n            <ul class=\"main_nav-list\">\n              <li class=\"projects\">projects</li>\n              <li class=\"about\">about</li>\n              <li class=\"contact\">contact</li>\n            </ul>\n          </nav>\n        </div>\n      </div>\n    </header>\n    <section>\n    <div class=\"info\">\n      <div class=\"projects_info\">\n        <p>PROJECTS Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</lor></p>\n      </div>\n      <div class=\"about_info\">\n        <p>My name is Aleksandra Martyna. I am a Junior Front-end Developer.</p>\n      </div>\n      <div class=\"contact_info\">\n        <p>Aleksandra Martyna</p>\n        <p>amartyna@aol.pl</p>\n        <p>0048 736 895 452</p>\n      </div>\n    </div>\n    <section>\n  </div>\n\n\n    <script\n    src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\n    integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\n    crossorigin=\"anonymous\"></script>\n    <script src=\"scripts/out.js\"></script>\n</body>\n</html>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <link rel=\"stylesheet\" href=\"styles/css/main.css\">\n  <title>Aleksandra Martyna</title>\n</head>\n<body>\n  <div class=\"container\">\n    <header>\n      <div class=\"main\">\n        <div class=\"main_welcome\">\n          <h1>{</h1>\n          <h1 class=\"title\">Hello</h1>\n          <h1>}</h1>\n        </div>\n        <div class=\"main_nav\">\n          <nav>\n            <ul class=\"main_nav-list\">\n              <li class=\"projects\">projects</li>\n              <li class=\"about\">about</li>\n              <li class=\"contact\">contact</li>\n            </ul>\n          </nav>\n        </div>\n      </div>\n    </header>\n    <section>\n    <div class=\"info\">\n      <div class=\"projects_info\">\n        <p>PROJECTS Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</lor></p>\n      </div>\n      <div class=\"about_info\">\n        <p>My name is Aleksandra Martyna. I am a Junior Front-end Developer.</p>\n      </div>\n      <div class=\"contact_info\">\n        <p>Aleksandra Martyna</p>\n        <p>amartyna@aol.pl</p>\n        <p>0048 736 895 452</p>\n      </div>\n    </div>\n    <section>\n  </div>\n\n\n    <script\n    src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\n    integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\n    crossorigin=\"anonymous\"></script>\n    <script src=\"scripts/out.js\"></script>\n</body>\n</html>\n"
 
 /***/ })
 /******/ ]);

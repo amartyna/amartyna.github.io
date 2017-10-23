@@ -22,6 +22,10 @@ projects.click(function() {
   contactInfo.hide();
   projectsInfo.fadeToggle();
 
+  if (clicked) {
+    $('.title').text("Projects");
+  }
+
 });
 
 about.click(function() {
@@ -29,12 +33,20 @@ about.click(function() {
   contactInfo.hide();
   aboutInfo.fadeToggle();
 
+  if (clicked) {
+    $('.title').text("About");
+  }
+
 });
 
 contact.click(function() {
   aboutInfo.hide();
   projectsInfo.hide();
   contactInfo.fadeToggle();
+
+  if (clicked) {
+    $('.title').text("Contact");
+  }
 
 
 });
