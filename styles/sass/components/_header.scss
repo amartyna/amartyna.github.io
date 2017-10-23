@@ -1,0 +1,42 @@
+body {
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 800px;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+}
+
+.main {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 5rem;
+  flex-direction: column;
+}
+.main_welcome {
+  h1 {
+    margin-bottom: 20%;
+  }
+}
+
+.main_nav-list {
+  font-size: 1rem;
+  display: inline-flex;
+
+  li {
+    margin-right: 15%;
+    &:hover {
+      color: #e542f4;
+    }
+  }
+}
+
+.info {
+  width: 50%;
+  padding: 10%;
+}
