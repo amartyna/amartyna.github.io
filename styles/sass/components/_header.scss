@@ -31,22 +31,12 @@ body {
   .main_nav-list {
     display: flex;
     justify-content: space-between;
-    a {
-      &:link {
-        text-decoration: none;
-        color: yellow;
-      }
-      &:visited {
-        text-decoration: none;
-        color: #1e43ff;
-      }
+    li {
+      color: blue;
+      cursor: pointer;
       &:hover {
         text-decoration: none;
         color: #e542f4;
-      }
-      &:active {
-        text-decoration: none;
-        color: #1e43ff;
       }
     }
     @media #{$desktop} {
