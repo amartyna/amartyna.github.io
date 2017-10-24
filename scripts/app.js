@@ -23,7 +23,7 @@ projects.click(function() {
   projectsInfo.fadeToggle();
 
   if (clicked) {
-    $('.title').text("Projects");
+    $('.main_title').text("Projects");
   }
 
 });
@@ -34,7 +34,7 @@ about.click(function() {
   aboutInfo.fadeToggle();
 
   if (clicked) {
-    $('.title').text("About");
+    $('.main_title').text("About");
   }
 
 });
@@ -45,7 +45,7 @@ contact.click(function() {
   contactInfo.fadeToggle();
 
   if (clicked) {
-    $('.title').text("Contact");
+    $('.main_title').text("Contact");
   }
 
 
