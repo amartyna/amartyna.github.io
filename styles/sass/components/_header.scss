@@ -1,32 +1,52 @@
+
 body {
-  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+  font-family: 'Inconsolata', monospace;
 }
 
 .container {
-  display: flex;
-  flex-direction: row-reverse;
-  max-width: 1000px;
-  height: 100vh;
-  align-items: center;
-  margin: auto;
-}
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 
+@media #{$small-up} {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    height: 100vh;
+    align-items: center;
+    margin: auto;
+  }
+
+}
 .main {
   display: flex;
-  width: 500px;
-  height: 500px;
   flex-direction: column;
+    h1 {
+      font-size: 2.5rem;
+      padding-bottom: 10%;
+    }
 
-  h1 {
-    font-size: 5rem;
-    padding-bottom: 10%;
+  @media #{$small-up} {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+
+    h1 {
+      font-size: 5rem;
+      padding-bottom: 10%;
+    }
   }
 }
 
 .info {
-  width: 500px;
-  height: 500px;
-  padding: 10%;
+  padding-top: 10%;
+  @media #{$small-up} {
+    width: 400px;
+    height: 400px;
+    padding: 10%;
+  }
 }
 
 .main_nav-list {
@@ -39,5 +59,11 @@ body {
       color: #e542f4;
       cursor: pointer;
     }
-  }
+ }
+}
+
+.copyright {
+  margin-bottom: 50%;
+  color: lightgray;
+  font-size: 0.5rem;
 }
