@@ -1,0 +1,51 @@
+.info {
+  @media #{$desktop} {
+    width: 60%;
+    padding: 2%;
+    p {
+      margin: 4% 0;
+      line-height: 20px;
+    }
+  }
+}
+.projects_info-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.projects_info-stock_app, .projects_info-coders_lab {
+  color: blue;
+  cursor: pointer;
+  &:hover {
+    color: #e542f4;
+  }
+}
+.projects_info-this {
+  a {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: #e542f4;
+    }
+  }
+}
+.app_photo {
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  @media #{$desktop} {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.sit_photo {
+  @media #{$desktop} {
+    width: 100%;
+    height: 100%;
+  }
+}

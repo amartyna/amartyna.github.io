@@ -1,24 +1,7 @@
-
-body {
-  font-family: 'Inconsolata', monospace;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-
-  @media #{$desktop} {
-    flex-direction: row;
-    max-width: 800px;
-    min-height: 400px;
-    margin: auto;
-    justify-content: space-around;
-  }
-}
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   h1 {
     font-size: 4rem;
     @media #{$desktop} {
@@ -44,16 +27,7 @@ body {
     }
   }
   @media #{$desktop} {
-    width: 35%;
+    width: 30%;
     padding: 2%;
-  }
-}
-.info {
-  @media #{$desktop} {
-    width: 60%;
-    padding: 2%;
-    p {
-      margin: 4% 0;
-    }
   }
 }

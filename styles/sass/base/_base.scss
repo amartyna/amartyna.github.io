@@ -1,1 +1,16 @@
+body {
+  font-family: 'Inconsolata', monospace;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
 
+  @media #{$desktop} {
+    flex-direction: row;
+    max-width: 800px;
+    min-height: 400px;
+    margin: auto;
+    justify-content: space-around;
+  }
+}
